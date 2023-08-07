@@ -1,5 +1,5 @@
 {
-    "name": "mohammad-waleed/keycloak-admin-client",
+    "name": "nti/keycloak-client",
     "description": "Connect to keycloak admin api easily",
     "type": "library",
     "license": "MIT",
@@ -10,13 +10,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Keycloak\\": "src/"
+            "NTI\\KeycloakClient\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Mohammad Waleed",
-            "email": "mohammed.barghash99@gmail.com"
+            "name": "Angel Bencosme",
+            "email": "abencosme@syneteksolutions.com"
         }
     ]
 }
