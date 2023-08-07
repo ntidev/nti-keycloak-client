@@ -51,7 +51,7 @@ https://www.keycloak.org/documentation -> "Administration REST API"
 #### 1. Create new client 
 
 ```php
-$client = Keycloak\Admin\KeycloakClient::factory([
+$client = NTI\KeycloakClient\Admin\KeycloakClient::factory([
     'realm' => 'master',
     'username' => 'admin',
     'password' => '1234',
@@ -118,7 +118,7 @@ Currently, the following credentials are supported
 - password credentials, used by default
   - to authenticate with a user account
   ````php
-  $client = Keycloak\Admin\KeycloakClient::factory([
+  $client = NTI\KeycloakClient\Admin\KeycloakClient::factory([
       ...
       'grant_type' => 'password',
       'username' => 'admin',
@@ -128,7 +128,7 @@ Currently, the following credentials are supported
 - client credentials
   - to authenticate with a client service account
   ````php
-  $client = Keycloak\Admin\KeycloakClient::factory([
+  $client = NTI\KeycloakClient\Admin\KeycloakClient::factory([
       ...
       'grant_type' => 'client_credentials',
       'client_id' => 'admin-cli',
@@ -146,7 +146,7 @@ For example:
 use GuzzleHttp\Middleware;
 use Psr\Http\Message\RequestInterface;
 
-$client = Keycloak\Admin\KeycloakClient::factory([
+$client = NTI\KeycloakClient\Admin\KeycloakClient::factory([
     ...
     'middlewares' => [
         // throws exceptions when request fails
@@ -179,7 +179,7 @@ class CustomTokenStorage implements TokenStorage
     }
 }
 
-$client = Keycloak\Admin\KeycloakClient::factory([
+$client = NTI\KeycloakClient\Admin\KeycloakClient::factory([
     ...
     'token_storage' => new CustomTokenStorage(),
 ]);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Keycloak\Admin\Classes;
+namespace NTI\KeycloakClient\Admin\Classes;
 
 use GuzzleHttp\Command\CommandInterface;
 use GuzzleHttp\Command\Guzzle\Operation;

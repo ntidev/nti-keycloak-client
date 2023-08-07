@@ -1,13 +1,13 @@
 <?php
 
-namespace Keycloak\Admin\Middleware;
+namespace NTI\KeycloakClient\Admin\Middleware;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Promise\FulfilledPromise;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Promise\RejectedPromise;
 use GuzzleHttp\Promise\RejectionException;
-use Keycloak\Admin\TokenStorages\TokenStorage;
+use NTI\KeycloakClient\Admin\TokenStorages\TokenStorage;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

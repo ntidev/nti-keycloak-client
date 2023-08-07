@@ -1,22 +1,22 @@
 <?php
 
-namespace Keycloak\Admin;
+namespace NTI\KeycloakClient\Admin;
 
-use Keycloak\Admin\Middleware\RefreshToken;
+use NTI\KeycloakClient\Admin\Middleware\RefreshToken;
 use GuzzleHttp\Command\Guzzle\GuzzleClient;
 use GuzzleHttp\Command\Guzzle\Description;
 use GuzzleHttp\Command\Guzzle\Serializer;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\HandlerStack;
-use Keycloak\Admin\Classes\FullBodyLocation;
-use Keycloak\Admin\Classes\FullTextLocation;
-use Keycloak\Admin\TokenStorages\RuntimeTokenStorage;
+use NTI\KeycloakClient\Admin\Classes\FullBodyLocation;
+use NTI\KeycloakClient\Admin\Classes\FullTextLocation;
+use NTI\KeycloakClient\Admin\TokenStorages\RuntimeTokenStorage;
 
 /**
  * Class KeycloakClient
  *
- * @package Keycloak\Admin\Client
+ * @package NTI\KeycloakClient\Admin\Client
  *
  * @method array clearAllLoginFailures(array $args = array()) { @command Keycloak clearAllLoginFailures }
  * @method array getBruteForceUserStatus(array $args = array()) { @command Keycloak getBruteForceUserStatus }

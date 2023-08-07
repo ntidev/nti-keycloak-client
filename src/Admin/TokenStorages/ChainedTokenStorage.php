@@ -1,6 +1,6 @@
 <?php
 
-namespace Keycloak\Admin\TokenStorages;
+namespace NTI\KeycloakClient\Admin\TokenStorages;
 
 class ChainedTokenStorage implements TokenStorage
 {
