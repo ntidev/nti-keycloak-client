@@ -36,13 +36,12 @@ class FullTextLocation extends AbstractLocation
      * @param CommandInterface $command
      * @param RequestInterface $request
      * @param Parameter $param
-     * @param $vaule
      * @return MessageInterface
      */
     public function visit(
         CommandInterface $command,
         RequestInterface $request,
-        Parameter        $param, $vaule
+        Parameter        $param
     ) {
         $oldValue = $request->getBody()->getContents();
 
@@ -50,7 +49,7 @@ class FullTextLocation extends AbstractLocation
         $value = $param->filter($value);
 
         if ($oldValue !== '') {
-            $value = $oldValue.$vaule;
+            $value = $oldValue.$value;
         }
 
         if ($this->contentType && !$request->hasHeader('Content-Type')) {
