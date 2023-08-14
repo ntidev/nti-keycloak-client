@@ -16,7 +16,7 @@ use NTI\KeycloakClient\Admin\TokenStorages\RuntimeTokenStorage;
 /**
  * Class KeycloakClient
  *
- * @package NTI\KeycloakClient\Admin\Client
+ * @package NTI\KeycloakClient\Admin\KeycloakClient
  *
  * @method array clearAllLoginFailures(array $args = array()) { @command Keycloak clearAllLoginFailures }
  * @method array getBruteForceUserStatus(array $args = array()) { @command Keycloak getBruteForceUserStatus }
@@ -298,7 +298,7 @@ class KeycloakClient extends GuzzleClient
      *
      * @param array $config
      *
-     * @return \Keycloak\Admin\KeycloakClient
+     * @return KeycloakClient
      */
     public static function factory($config = array())
     {
