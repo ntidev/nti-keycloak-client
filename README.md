@@ -56,6 +56,7 @@ $client = NTI\KeycloakClient\Admin\KeycloakClient::factory([
     'username' => 'admin',
     'password' => '1234',
     'client_id' => 'admin-cli',
+    'client_secret' => 'sfdasd',
     'baseUri' => 'http://127.0.0.1:8180',
 ]);
 ```
@@ -95,6 +96,10 @@ $client->getUsers();
    ]
 */
 
+$client->getUser([
+    'id' => '39839a9b-de08-4d2c-b91a-a6ce2595b1f3'
+]);
+
 $client->createUser([
     'username' => 'test',
     'email' => 'test@test.com',
@@ -105,6 +110,23 @@ $client->createUser([
             'value'=>'1234',
         ],
     ],
+]);
+
+$client->updateUser([
+    'id' => '39839a9b-de08-4d2c-b91a-a6ce2595b1f3',
+    'username' => 'test',
+    'email' => 'test@test.com',
+    'enabled' => true,
+    'credentials' => [
+        [
+            'type'=>'password',
+            'value'=>'1234',
+        ],
+    ],
+]);
+
+$client->deleteUser([
+    'id' => '39839a9b-de08-4d2c-b91a-a6ce2595b1f3'
 ]);
 ```
 
