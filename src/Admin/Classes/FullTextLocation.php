@@ -35,14 +35,14 @@ class FullTextLocation extends AbstractLocation
     /**
      * @param CommandInterface $command
      * @param RequestInterface $request
-     * @param Parameter        $param
-     *
+     * @param Parameter $param
+     * @param $vaule
      * @return MessageInterface
      */
     public function visit(
         CommandInterface $command,
         RequestInterface $request,
-        Parameter $param
+        Parameter        $param, $vaule
     ) {
         $oldValue = $request->getBody()->getContents();
 
