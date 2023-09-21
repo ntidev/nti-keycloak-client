@@ -5269,7 +5269,7 @@ return array(
         ),
 
         'getUsers' => array(
-            'uri'         => 'auth/auth/admin/realms/{realm}/users',
+            'uri'         => 'auth/admin/realms/{realm}/users',
             'description' => 'Get users Returns a list of users, filtered according to query parameters',
             'httpMethod'  => 'GET',
             'parameters'  => array(
@@ -5337,7 +5337,7 @@ return array(
         ),
 
         'getUser' => array(
-            'uri'         => 'auth/auth/admin/realms/{realm}/users/{id}',
+            'uri'         => 'auth/admin/realms/{realm}/users/{id}',
             'description' => 'Get representation of the user',
             'httpMethod'  => 'GET',
             'parameters'  => array(
